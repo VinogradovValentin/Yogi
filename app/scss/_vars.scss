@@ -32,7 +32,25 @@ $text: #94959A;
   font-weight: 300;
 }
 
-%raleway-700{
+%raleway-700 {
   font-family: 'Raleway-Bold', sans-serif;
   font-weight: 700;
+}
+
+%accent-btn {
+  border-radius: 15px;
+  background-color: $accent;
+  color: #fff;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.01em;
+  @extend %poppins-500;
+}
+
+%title-font {
+  @extend %poppins-700;
+  font-size: 40px;
+  line-height: 60px;
+  letter-spacing: 0.02em;
+  color: $title;
 }

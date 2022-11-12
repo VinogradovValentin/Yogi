@@ -97,6 +97,7 @@
   display: flex;
   justify-content: space-between;
   padding-top: 40px;
+  padding-bottom: 82px;
   border-top: 2px solid #120D26;
   &__social-list {
     display: flex;
@@ -147,3 +148,170 @@
 .jq-selectbox.focused .jq-selectbox__select {
   border: 1px solid transparent;
 }
+
+
+/* Top section
+================================== */
+.top {
+  margin: 99px 0 129px;
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item-title {
+    margin-bottom: 33px;
+    width: 550px;
+    font-size: 72px;
+    line-height: 90px;
+    letter-spacing: 0.01em;
+    color: $title;
+    @extend %poppins-700;
+  }
+  &__item-text {
+    width: 585px;
+    margin-bottom: 58px;
+    font-size: 20px;
+    line-height: 30px;
+    color: $text;
+    @extend %poppins-400;
+  }
+  &__item-btn {
+    @extend %accent-btn;
+    padding: 22px 82px 22px 48px;
+    margin-right: 27px;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: '';
+      width: 9px;
+      height: 16px;
+      background-image: url(../images/icons/arrow-right.svg);
+      right: 52px;
+      bottom: 26px;
+    }
+  }
+  &__item-credit {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 24px;
+    color: $accent;
+    @extend %poppins-500;
+  }
+}
+
+
+/* Partners
+================================== */
+.partners {
+  margin: 118px 0;
+  &__text {
+    font-size: 22px;
+    line-height: 34px;
+    color: $text;
+    @extend %poppins-500;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+/* Pricing section
+================================== */
+.pricing {
+  &__top {
+    padding: 43px 0 53px;
+    background-color: rgba(255, 112, 88, 0.05);
+  }
+  &__top-title {
+    @extend %title-font;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  &__top-text {
+    color: $text;
+    @extend %poppins-400;
+    text-align: center;
+  }
+  &__bottom {
+    padding: 48px 0 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__bottom-box {
+    box-shadow: 0px 10px 55px rgba(241, 102, 24, 0.15);
+    border-radius: 15px;
+    width: 401px;
+    padding: 37px 52px 35px 52px;
+    text-align: center;
+  }
+  &__bottom-box--design {
+    height: 535px;
+  }
+  &__bottom-box--popular {
+    height: 711px;
+  }
+  &__bottom-price {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 22px;
+  }
+  &__bottom-money {
+    font-size: 40px;
+    line-height: 60px;
+    letter-spacing: 0.02em;
+    color: $title;
+    @extend %poppins-700;
+  }
+  &__bottom-hours {
+    color: $text;
+  }
+  &__bottom-item-title {
+    font-size: 36px;
+    line-height: 54px;
+    color: $accent;
+    margin-bottom: 22px;
+  }
+  &__bottom-item-text {
+    color: $text;
+    @extend %poppins-400;
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 22px;
+    margin-bottom: 22px;
+    border-bottom: 2px solid #F2F2F2;
+  }
+  &__bottom-list {
+    padding-left: 0;
+    margin-bottom: 27px;
+    text-align: start;
+  }
+  &__bottom-list__item {
+    font-size: 20px;
+    line-height: 30px;
+    @extend %poppins-500;
+    color: $title;
+    margin-bottom: 29px;
+    padding-left: 55px;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: '';
+      width: 54px;
+      height: 53px;
+      background-image: url(../images/icons/check.svg);
+      left: -15px;
+      top: -18px;
+    }
+  }
+  &__bottom-item__btn {
+    @extend %accent-btn;
+    padding: 27px 106px;
+    display: block;
+  }
+}
+
