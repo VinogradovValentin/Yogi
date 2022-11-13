@@ -31,6 +31,21 @@
     letter-spacing: 0.01em;
     color: #94959A;
     padding-left: 50px;
+    padding-bottom: 6px;
+  }
+  &-link--active {
+    position: relative;
+    color: $accent;
+    &::before {
+      position: absolute;
+      content: '';
+      width: 41px;
+      height: 2px;
+      border-radius: 2px;
+      background-color: $accent;
+      bottom: 0;
+      left: 54%;
+    }
   }
 }
 
@@ -61,7 +76,7 @@
 /* Footer
 ================================== */
 .footer {
-  margin: 69px 0 82px;
+  margin-top: 69px;
 }
 
 .footer-top {
@@ -153,10 +168,19 @@
 /* Top section
 ================================== */
 .top {
-  margin: 99px 0 129px;
+  margin: 47px 0 129px;
   &__items {
     display: flex;
     justify-content: space-between;
+    position: relative;
+    background-image: url(../images/decor/decor-1.png);
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+  }
+  &__item {
+    padding-top: 53px;
+    
   }
   &__item-title {
     margin-bottom: 33px;
@@ -466,5 +490,49 @@
     background-color: #fff;
     padding: 22px 66px;
     color: $title;
+  }
+}
+
+
+/* Price-top section
+================================== */
+.price-top {
+  margin: 60px 0 146px;
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background-image: url(../images/decor/decor-1.png);
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+  }
+  &__item {
+    width: 637px;
+    padding-top: 85px;
+  }
+  &__btn {
+    @extend %accent-btn;
+    padding: 14px 60px;
+    margin-bottom: 14px;
+    display: inline-block;
+  }
+  &__title {
+    @extend %poppins-700;
+    color: $title;
+    font-size: 72px;
+    line-height: 90px;
+    letter-spacing: 0.01em;
+    margin-bottom: 34px;
+  }
+  &__text {
+    @extend %poppins-400;
+    font-size: 20px;
+    line-height: 30px;
+    color: $text;
+  }
+  &__img {
+    max-width: 510px;
+    object-fit: cover;
   }
 }
