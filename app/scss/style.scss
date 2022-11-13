@@ -197,6 +197,10 @@
     color: $accent;
     @extend %poppins-500;
   }
+  &__item-img {
+    max-width: 530px;
+    object-fit: cover;
+  }
 }
 
 
@@ -315,3 +319,152 @@
   }
 }
 
+
+/* Users section
+================================== */
+.users {
+  margin: 145px 0 182px;
+  &__title {
+    padding: 26px 0 20px;
+    background-color: rgba(255, 112, 88, 0.05);
+    text-align: center;
+    @extend %title-font;
+    margin-bottom: 49px;
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 41px;
+  }
+  &__item {
+    width: 400px;
+    text-align: center;
+    padding: 80px 45px;
+    box-shadow: 0px 10px 40px rgba(241, 102, 24, 0.15);
+    border-radius: 15px;
+  }
+  &__item-title {
+    font-size: 24px;
+    line-height: 36px;
+    color: $title;
+    margin-bottom: 28px;
+  }
+  &__item-text {
+    color: $text;
+    @extend %poppins-400;
+    margin-bottom: 28px;
+  }
+  &__item-stars {
+    margin-bottom: 28px;
+  }
+  &__item-name {
+    font-size: 15px;
+    line-height: 22px;
+    @extend %poppins-500;
+  }
+}
+
+
+/* Rateyo
+================================== */
+.jq-ry-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+/* Global section
+================================== */
+.global {
+  padding-top: 131px;
+  background-color: rgba(255, 112, 88, 0.05);
+  &__inner {
+    display: flex;
+  }
+  &__inner-info {
+    padding-top: 60px;
+    width: 487px;
+    margin-right: 93px;
+  }
+  &__inner-title {
+    @extend %title-font;
+    margin-bottom: 23px;
+  }
+  &__inner-text {
+    @extend %poppins-400;
+    color: $text;
+    margin-bottom: 63px;
+  }
+  &__inner-btn {
+    @extend %accent-btn;
+    padding: 22px 82px 22px 48px;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: '';
+      width: 9px;
+      height: 16px;
+      background-image: url(../images/icons/arrow-right.svg);
+      right: 52px;
+      bottom: 26px;
+    }
+  }
+  &__inner-images {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    padding-bottom: 220px;
+  }
+  &__inner-img {
+    position: relative;
+    object-fit: cover;
+  }
+  &__inner-img1 {
+    max-width: 330px;
+  }
+  &__inner-img2 {
+    max-width: 290px;
+    right: -79px;
+    top: 76px;
+  }
+  &__inner-img3 {
+    top: 78px;
+    right: -59px;
+    max-width: 250px;
+  }
+  &__inner-img4 {
+    top: 133px;
+    right: -40px;
+    max-width: 330px;
+  }
+}
+
+
+
+/* Digital section
+================================== */
+.digital {
+  padding: 113px 0;
+  background-color: rgba(255, 112, 88, 0.05);
+  &__inner {
+    padding: 96px 209px;
+    background-color: #FF7058;
+    border-radius: 25px;
+    text-align: center;
+  }
+  &__inner-title {
+    @extend %title-font;
+    color: #fff;
+    margin-bottom: 38px;
+  }
+  &__inner-text {
+    @extend %poppins-400;
+    color: #fff;
+    margin-bottom: 38px;
+  }
+  &__inner-btn {
+    @extend %accent-btn;
+    background-color: #fff;
+    padding: 22px 66px;
+    color: $title;
+  }
+}
