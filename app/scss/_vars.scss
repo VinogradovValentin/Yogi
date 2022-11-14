@@ -48,6 +48,17 @@ $text: #94959A;
   transition: all .3s
 }
 
+%title-btn {
+  border-radius: 15px;
+  background-color: $title;
+  color: #fff;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.01em;
+  @extend %poppins-500;
+  transition: all .3s
+}
+
 %title-font {
   @extend %poppins-700;
   font-size: 40px;
