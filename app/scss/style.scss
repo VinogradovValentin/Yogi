@@ -257,6 +257,7 @@
 /* Pricing section
 ================================== */
 .pricing {
+  margin-bottom: 182px;
   &__top {
     padding: 43px 0 53px;
     background-color: rgba(255, 112, 88, 0.05);
@@ -272,7 +273,7 @@
     text-align: center;
   }
   &__bottom {
-    padding: 48px 0 30px;
+    padding: 48px 0;
     display: flex;
     justify-content: space-between;
   }
@@ -357,7 +358,7 @@
 /* Users section
 ================================== */
 .users {
-  margin: 145px 0 182px;
+  margin: 145px 0;
   &__title {
     padding: 26px 0 20px;
     background-color: rgba(255, 112, 88, 0.05);
@@ -554,5 +555,165 @@
   &__img {
     max-width: 510px;
     object-fit: cover;
+  }
+}
+
+
+/* Solution section
+================================== */
+.solution {
+  padding-top: 35px;
+  background-color: rgba(255, 112, 88, 0.05);
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    @extend %poppins-700;
+    font-size: 72px;
+    line-height: 90px;
+    letter-spacing: 0.01em;
+    width: 880px;
+    padding-bottom: 61px;
+    margin-bottom: 50px;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: '';
+      width: 291px;
+      height: 1px;
+      border-bottom: 2px solid #94959A;
+      bottom: 0;
+    }
+  }
+  &__text {
+    font-size: 20px;
+    line-height: 30px;
+    color: $text;
+    @extend %poppins-500;
+    width: 620px;
+    margin-bottom: 48px;
+  }
+  &__btn {
+    @extend %accent-btn;
+    padding: 22px 41px;
+    &:hover {
+      background-color: $title;
+    }
+  }
+  &__img {
+    padding-top: 174px;
+    padding-bottom: 187px;
+  }
+}
+
+
+/* About section
+================================== */
+.about {
+  padding: 41px 0 82px;
+  &__items {
+    display: flex;
+    position: relative;
+    background-image: url(../images/decor/decor-1.png);
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+  }
+  &__item {
+    margin-right: 110px;
+    padding-top: 183px;
+  }
+  &__title {
+    @extend %poppins-700;
+    font-size: 72px;
+    line-height: 90px;
+    letter-spacing: 0.01em;
+    margin-bottom: 19px;
+  }
+  &__text {
+    font-size: 20px;
+    line-height: 30px;
+    color: $text;
+    @extend %poppins-400;
+    margin-bottom: 31px;
+  }
+  &__btn {
+    @extend %accent-btn;
+    padding: 22px 39px;
+    display: inline-block;
+    &:hover {
+      background-color: $title;
+    }
+  }
+  &__img {
+    max-width: 622px;
+    object-fit: cover;
+  }
+  &__img-box {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: '';
+      width: 116px;
+      height: 117px;
+      background-image: url(../images/decor/decor-2.svg);
+      left: -45px;
+      bottom: -38px;
+      z-index: -1;
+    }
+  }
+}
+
+
+/* Benefits section
+================================== */
+.benefits {
+  background-color: rgba(255, 112, 88, 0.05);
+  padding: 60px 0 124px;
+  &__title {
+    @extend %poppins-700;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    margin-bottom: 82px;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+    border-radius: 15px;
+    width: 400px;
+    height: 666px;
+    padding: 21px 25px;
+  }
+  &__item-img {
+    margin-bottom: 13px;
+    max-width: 350px;
+    object-fit: cover;
+  }
+  &__item-title {
+    font-size: 36px;
+    line-height: 54px;
+    margin-bottom: 12px;
+  }
+  &__item-text {
+    @extend %poppins-500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #3C3E56;
+  }
+  &__item-date {
+    @extend %poppins-500;
+    font-size: 16px;
+    line-height: 24px;
+    color: $text;
   }
 }
