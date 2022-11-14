@@ -32,6 +32,10 @@
     color: #94959A;
     padding-left: 50px;
     padding-bottom: 6px;
+    transition: all .3s;
+    &:hover {
+      color: $accent;
+    }
   }
   &-link--active {
     position: relative;
@@ -204,6 +208,9 @@
     padding: 22px 82px 22px 48px;
     margin-right: 27px;
     position: relative;
+    &:hover {
+      background-color: $title;
+    }
     &::before {
       position: absolute;
       content: '';
@@ -340,6 +347,9 @@
     @extend %accent-btn;
     padding: 27px 106px;
     display: block;
+    &:hover {
+      background-color: $title;
+    }
   }
 }
 
@@ -423,6 +433,9 @@
     @extend %accent-btn;
     padding: 22px 82px 22px 48px;
     position: relative;
+    &:hover {
+      background-color: $title;
+    }
     &::before {
       position: absolute;
       content: '';
@@ -490,6 +503,10 @@
     background-color: #fff;
     padding: 22px 66px;
     color: $title;
+    &:hover {
+      background-color: $title;
+      color: #fff;
+    }
   }
 }
 
@@ -516,6 +533,9 @@
     padding: 14px 60px;
     margin-bottom: 14px;
     display: inline-block;
+    &:hover {
+      background-color: $title;
+    }
   }
   &__title {
     @extend %poppins-700;
