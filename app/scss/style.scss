@@ -717,3 +717,90 @@
     color: $text;
   }
 }
+
+
+/* Contacts section
+================================== */
+.contacts {
+  padding: 71px 0 55px;
+  background-color: rgba(255, 112, 88, 0.05);
+  &__items {
+    background-color: #FFFFFF;
+    box-shadow: 0px 10px 55px rgba(241, 102, 24, 0.15);
+    border-radius: 15px;
+    display: flex;
+  }
+  &__image {
+    padding: 22px 0 0 20px;
+    margin-right: 146px;
+  }
+  &__img {
+    max-width: 622px;
+    object-fit: cover;
+  }
+  &__title {
+    @extend %title-font;
+    padding-top: 31px;
+  }
+  &__text {
+    font-size: 20px;
+    line-height: 30px;
+    color: $text;
+    @extend %poppins-500;
+    margin-bottom: 49px;
+  }
+  &__form-text {
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0.01em;
+    color: rgba(18, 13, 38, 0.5);
+    margin-bottom: 16px;
+  }
+  &__form-input {
+    width: 466px;
+    background: rgba(255, 112, 88, 0.05);
+    border-radius: 10px;
+    padding: 21px 16px;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.01em;
+    @extend %poppins-500;
+    outline: none;
+    border: none;
+    margin-bottom: 32px;
+    &:focus {
+      color: rgba(255, 112, 88, 0.5);
+    }
+    &::placeholder {
+      color: rgba(255, 112, 88, 0.5);
+    }
+  }
+  &__form-area {
+    padding: 18px 24px;
+    width: 466px;
+    height: 206px;
+    background: rgba(255, 112, 88, 0.05);
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    resize: none;
+    margin-bottom: 38px;
+    &:focus {
+      color: rgba(255, 112, 88, 0.5);
+    }
+    &::placeholder {
+      color: rgba(255, 112, 88, 0.5);
+    }
+  }
+  &__form-btn {
+    @extend %accent-btn;
+    cursor: pointer;
+    border: none;
+    padding: 24px 192px;
+    margin-bottom: 38px;
+    &:hover {
+      background-color: $title;
+    }
+  }
+}
+

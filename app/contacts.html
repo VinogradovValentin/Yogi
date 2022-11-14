@@ -25,7 +25,7 @@
                 <a class="menu__list-link" href="#">About Us</a>
               </li>
               <li class="menu__list-item">
-                <a class="menu__list-link" href="#">Contact</a>
+                <a class="menu__list-link menu__list-link--active" href="#">Contact</a>
               </li>
             </ul>
           </nav>
@@ -36,7 +36,36 @@
     </div>
   </header>
 
-  <main class="main"></main>
+  <main class="main">
+
+    <section class="contacts">
+      <div class="container">
+        <div class="contacts__items">
+          <div class="contacts__image">
+            <img class="contacts__img" src="images/content/contacts.png" alt="image">
+          </div>
+          <div class="contacts__item">
+            <h4 class="contacts__title">Contact Us</h4>
+            <p class="contacts__text">
+              Questions, bug reports, feedback.
+            </p>
+            <form class="contacts__form" action="#">
+              <p class="contacts__form-text">
+                Your mail
+              </p>
+              <input class="contacts__form-input" type="email" placeholder="Enter your email">
+              <p class="contacts__form-text">
+                Tell us what you need help with:
+              </p>
+              <textarea class="contacts__form-area" placeholder="Enter a topic"></textarea>
+              <button class="contacts__form-btn" type="submit">Send now</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
 
   <footer class="footer">
     <div class="container">
