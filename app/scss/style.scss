@@ -812,10 +812,9 @@
 /* Multiple section
 ================================== */
 .multiple {
-  padding-top: 75px;
   background-color: rgba(255, 112, 88, 0.05);
   &__info {
-    margin-bottom: 112px;
+    padding: 75px 0 112px;
     text-align: center;
   }
   &__info-title {
@@ -902,6 +901,7 @@
     border-radius: 15px;
     padding: 21px 22px;
     width: 412px;
+    min-height: 878px;
     text-align: left;
     transition: all .3s;
     &:hover {
@@ -938,11 +938,115 @@
     @extend %accent-btn;
     padding: 22px 67px;
     display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 119px;
     &:hover {
       background-color: $title;
+    }
+  }
+}
+
+
+/* Single-blog section
+================================== */
+.single-blog {
+  padding-bottom: 108px;
+  background: rgba(255, 112, 88, 0.05);
+  &__box {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 55px rgba(241, 102, 24, 0.15);
+    border-radius: 15px;
+    padding: 21px;
+    margin-bottom: 37px;
+  }
+  &__img {
+    width: 1279px;
+    object-fit: cover;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 146px;
+  }
+  &__info {
+    padding-top: 38px;
+    margin-right: 55px;
+  }
+  &__date {
+    @extend %poppins-300;
+    font-size: 28px;
+    line-height: 42px;
+    color: #000000;
+    margin-bottom: 15px;
+  }
+  &__title {
+    @extend %poppins-700;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 62px;
+    color: #000000;
+    margin-bottom: 48px;
+    width: 809px;
+  }
+  &__text {
+    @extend %poppins-300;
+    font-size: 28px;
+    line-height: 42px;
+    margin-bottom: 34px;
+  }
+  &__image {
+    max-width: 359px;
+    object-fit: cover;
+  }
+  &__img--first {
+    margin-left: 29px;
+    float: right;
+  }
+  &__img--second {
+    margin-right: 38px;
+    float: left;
+  }
+  &__button {
+    text-align: center;
+  }
+  &__btn {
+    @extend %accent-btn;
+    padding: 22px 66px;
+    &:hover {
+      background-color: $title;
+    }
+  }
+}
+
+/* Aside
+================================== */
+.aside {
+  align-self: start;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 55px rgba(241, 102, 24, 0.15);
+  border-radius: 15px;
+  padding: 38px 43px;
+  &__item {
+    width: 218px;
+    margin-bottom: 42px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__date {
+    @extend %raleway-300;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  &__title {
+    @extend %raleway-700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+    transition: all .3s;
+    &:hover {
+      color: $accent;
     }
   }
 }
