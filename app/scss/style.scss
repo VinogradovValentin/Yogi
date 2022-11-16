@@ -1157,3 +1157,110 @@
     }
   }
 }
+
+
+/* Career section
+================================== */
+.career {
+  background: rgba(255, 112, 88, 0.05);
+  &__inner {
+    color: #000000;
+    display: flex;
+  }
+  &__info {
+    width: 868px;
+    margin-right: 64px;
+  }
+  &__info-date {
+    @extend %poppins-300;
+    padding-top: 38px;
+    margin-bottom: 32px;
+    font-size: 28px;
+    line-height: 42px;
+  }
+  &__info-title {
+    @extend %poppins-700;
+    font-size: 48px;
+    line-height: 62px;
+    margin-bottom: 43px;
+  }
+  &__info-text {
+    @extend %poppins-300;
+    font-size: 28px;
+    line-height: 42px;
+    margin-bottom: 48px;
+  }
+  &__info-box {
+    margin-bottom: 40px;
+  }
+  &__info-description,
+  &__apply-title {
+    @extend %poppins-700;
+    font-size: 36px;
+    line-height: 62px;
+    margin-bottom: 30px;
+  }
+  &__info-list {
+    padding-left: 40px;
+  }
+  &__info-item {
+    @extend %poppins-300;
+    list-style: disc;
+    font-size: 28px;
+    line-height: 42px;
+  }
+  &__aside {
+    width: 382px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 55px rgba(241, 102, 24, 0.15);
+    border-radius: 15px;
+    padding: 27px 71px 11px 39px;
+    align-self: flex-start;
+  }
+  &__aside-title {
+    @extend %raleway-700;
+    font-size: 26px;
+    line-height: 31px;
+    margin-bottom: 14px;
+  }
+  &__aside-item {
+    margin-bottom: 44px;
+  }
+  &__aside-date {
+    @extend %raleway-300;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 13px;
+  }
+  &__aside-link {
+    @extend %raleway-700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+    width: 218px;
+    transition: all .3s;
+    &:hover {
+      color: $accent;
+    }
+  }
+  &__apply {
+    margin-bottom: 114px;
+  }
+  &__apply-text {
+    @extend %poppins-300;
+    font-size: 28px;
+    line-height: 42px;
+    margin-bottom: 20px;
+  }
+  &__button {
+    text-align: center;
+    padding-bottom: 97px;
+  }
+  &__btn {
+    @extend %title-btn;
+    padding: 22px 66px;
+    &:hover {
+      background-color: $accent;
+    }
+  }
+}
