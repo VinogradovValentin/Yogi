@@ -1050,3 +1050,110 @@
     }
   }
 }
+
+
+/* Careers section
+================================== */
+.careers {
+  background: rgba(255, 112, 88, 0.05);
+  &__title {
+    @extend %poppins-700;
+    font-size: 48px;
+    line-height: 62px;
+    color: #000000;
+    margin-bottom: 20px;
+    padding-top: 38px;
+  }
+  &__text {
+    @extend %poppins-300;
+    font-size: 28px;
+    line-height: 42px;
+    color: #000000;
+    margin-bottom: 75px;
+  }
+  &__items {
+    display: flex;
+    margin-bottom: 75px;
+    min-height: 878px;
+  }
+  &__job {
+    margin-right: 20px;
+    width: 412px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 55px rgba(241, 102, 24, 0.15);
+    border-radius: 15px;
+    padding: 22px 22px 42px 22px;
+  }
+  &__job-img {
+    display: block;
+    margin-bottom: 36px;
+    max-width: 367px;
+    object-fit: cover;
+  }
+  &__job-date {
+    @extend %poppins-400;
+    font-size: 20px;
+    line-height: 30px;
+    color: rgba(18, 13, 38, 0.5);
+    margin-bottom: 30px;
+  }
+  &__job-title {
+    @extend %poppins-700;
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 27px;
+    width: 260px;
+    &:last-child {
+      margin-bottom: 71px;
+    }
+  }
+  &__job-btn {
+    @extend %accent-btn;
+    padding: 22px 161px;
+    display: block;
+    &:hover {
+      background-color: $title;
+    }
+  }
+  &__description {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 55px rgba(241, 102, 24, 0.15);
+    border-radius: 15px;
+    padding: 27px 19px 19px 27px;
+  }
+  &__description-title {
+    @extend %poppins-700;
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 20px;
+  }
+  &__description-text {
+    @extend %poppins-400;
+    font-size: 20px;
+    line-height: 30px;
+    color: rgba(18, 13, 38, 0.5);
+    margin-bottom: 25px;
+  }
+  &__description-button {
+    display: flex;
+    justify-content: end;
+  }
+  &__description-btn {
+    @extend %title-btn;
+    padding: 22px 65px;
+    &:hover {
+      background-color: $accent;
+    }
+  }
+  &__button {
+    text-align: center;
+    padding: 90px 0 208px;
+  }
+  &__btn {
+    @extend %accent-btn;
+    padding: 22px 67px;
+    &:hover {
+      background-color: $title;
+    }
+  }
+}
